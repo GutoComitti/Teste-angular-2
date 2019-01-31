@@ -1,0 +1,9 @@
+<div *ngIf="address && !address.erro">
+	<p>Logradouro: {{ address.logradouro }}</p>
+	<p>Complemento: {{ address.complemento }}</p>
+	<p>Localidade: {{ address.localidade }}</p>
+	<p>UF: {{ address.uf }}</p>
+</div>
+<div *ngIf="address && address.erro">
+	<p>O CEP informado não existe.</p>
+</div>

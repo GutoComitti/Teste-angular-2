@@ -1,27 +1,13 @@
-# DesafioProjuris
+## App Busca Endereço
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
+## Aplicativo de consulta de endereço a partir do CEP, utilizando a API ViaCEP (https://viacep.com.br/).
 
-## Development server
+Este aplicativo foi gerado através do framework Angular (https://github.com/angular/angular-cli) versão 7.1.2.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Para rodar o aplicativo, siga os passos abaixo:
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Abra a linha de comando na pasta atual;
+Rode o comando `ng serve`, e mantenha a linha de comando aberta.
+Ao compilar com sucesso, uma mensagem deverá aparecer e o aplicativo estará pronto para uso. 
+Navegue até a página `http://localhost:4200/`.
+Para buscar algum endereço, digite o CEP (apenas números) no campo de entrada e clique em enviar. Caso o CEP seja válido, aparecerá o endereço logo abaixo do botão.
