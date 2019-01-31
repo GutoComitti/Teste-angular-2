@@ -1,11 +1,8 @@
-
-
-
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-    <h1>Busca Endereço</h1>
-<p>Para buscar um endereço, digite o CEP correspondente (apenas números) no campo abaixo:</p>
+      <h1>Busca Endereço</h1>
+      <p>Para buscar um endereço, digite o CEP correspondente (apenas números) no campo abaixo:</p>
       <form (ngSubmit)="onSubmit()" #f="ngForm">
         <label for="cep">CEP</label>
         <input
@@ -16,6 +13,7 @@
           name="cep"
           pattern="^\d{8}$"
           required>
+          <br>
         <button
           class="btn btn-success"
           type="submit"
@@ -24,7 +22,7 @@
         </button>
       </form>
       <hr>
-      <app-address [address]="address"></app-address>
+      <app-address [address]="address" [requestFailed]="requestFailed"></app-address>
     </div>
   </div>
 </div>

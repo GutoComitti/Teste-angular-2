@@ -1,9 +1,17 @@
 <div *ngIf="address && !address.erro">
-	<p>Logradouro: {{ address.logradouro }}</p>
-	<p>Complemento: {{ address.complemento }}</p>
-	<p>Localidade: {{ address.localidade }}</p>
-	<p>UF: {{ address.uf }}</p>
+  <h3>Dados do CEP:</h3>
+  <br>
+  <p>Logradouro: {{ address.logradouro }}</p>
+  <p>Complemento: {{ address.complemento }}</p>
+  <p>Localidade: {{ address.localidade }}</p>
+  <p>UF: {{ address.uf }}</p>
 </div>
 <div *ngIf="address && address.erro">
-	<p>O CEP informado não existe.</p>
+  <p>O CEP informado não existe.</p>
+</div>
+<div *ngIf="requestFailed">
+  <p>
+  	Ocorreu um erro de conexão com o servidor.<br>
+  	Favor verificar sua conexão com a internet.
+  </p>
 </div>

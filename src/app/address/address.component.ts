@@ -10,13 +10,11 @@ import { Address } from '../shared/models/address.model';
 export class AddressComponent implements OnInit {
 
   @Input() address: Address;
+  @Input() requestFailed: boolean;
   
   constructor() { }
   
   ngOnInit() {
   
   }
-
-
-
 }
